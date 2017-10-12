@@ -1,4 +1,4 @@
-package jp.wasabeef.roundedtextureview;
+package rqg.fantasy.roundedvideoview;
 
 import android.util.Log;
 import javax.microedition.khronos.egl.EGL10;

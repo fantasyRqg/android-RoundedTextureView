@@ -1,4 +1,4 @@
-package jp.wasabeef.roundedtextureview;
+package rqg.fantasy.roundedvideoview;
 
 import android.graphics.Point;
 import android.graphics.RectF;
