@@ -1,25 +1,46 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-  repositories {
-    google()
-    jcenter()
-  }
-  dependencies {
-    classpath 'com.android.tools.build:gradle:3.0.0-beta7'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0-beta7'
 
-    // NOTE: Do not place your application dependencies here; they belong
-    // in the individual module build.gradle files
-  }
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
 }
 
 allprojects {
-  repositories {
-    jcenter()
-    google()
-  }
+    repositories {
+        jcenter()
+        google()
+    }
 }
 
 task clean(type: Delete) {
-  delete rootProject.buildDir
+    delete rootProject.buildDir
+}
+
+
+
+ext {
+    GROUP = 'rqg.fantasy.roundedvideoview'
+    VERSION_NAME = "1.0.0"
+    POM_PACKAGING = "aar"
+    POM_DESCRIPTION = "Rounded Vdeo View"
+
+    POM_URL = "https://github.com/fantasyRqg/android-RoundedTextureView"
+    POM_SCM_URL = "https://github.com/fantasyRqg/android-RoundedTextureView"
+    POM_SCM_CONNECTION = "scm:git:git@github.com:fantasyRqg/android-RoundedTextureView.git"
+    POM_SCM_DEV_CONNECTION = "scm:git:git@github.com:fantasyRqg/android-RoundedTextureView.git"
+
+    POM_LICENCE_NAME = "The Apache Software License, Version 2.0"
+    POM_LICENCE_URL = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    POM_LICENCE_DIST = "repo"
+
+    POM_DEVELOPER_ID = "rqg"
+    POM_DEVELOPER_NAME = "Ran Qingguo"
 }

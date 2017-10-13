@@ -33,3 +33,14 @@ dependencies {
     })
 
 }
+
+
+
+task sourceJar(type: Jar) {
+    from 'src/main/java'
+}
+
+version rootProject.ext.VERSION_NAME
+group rootProject.ext.GROUP
+
+apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
